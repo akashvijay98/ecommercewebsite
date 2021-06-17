@@ -27,7 +27,7 @@ class ProductProvider extends Component {
   };
 
   proceed = () => {
-    const mail = "akashvj";
+    
 
     let temp = [];
     temp = [...this.state.cart];
@@ -57,6 +57,7 @@ class ProductProvider extends Component {
   };
 
   componentDidMount() {
+    const mail = localStorage.getItem('userid')
     this.setProducts();
     this.refreshList();
   }
